@@ -14,16 +14,16 @@ Calculator.prototype.multiply = function(num1, num2){
 
 Calculator.prototype.subtract = function(num1, num2){
     this.result = num1 - num2;
-    this.historyOfOperations.push('subtracted ' + num1 +  ' from ' + num2 + ' got ' + this.result);
+    this.historyOfOperations.push("subtracted " + num1 +  " from " + num2 + " got " + this.result);
 }
 
 Calculator.prototype.divide = function(num1, num2){
     this.result = num1 / num2;
-    this.historyOfOperations.push('divided ' + num1 +  ' by ' + num2 + ' got ' + this.result);
+    this.historyOfOperations.push("divided " + num1 + " by " + num2 + " got " + this.result);
 }
 
 Calculator.prototype.printOperations = function(){
-    console.log('All operations in memory: ', this.historyOfOperations);
+    console.log("All operations in memory: ", this.historyOfOperations);
 }
 
 Calculator.prototype.clearOperations = function(){
