@@ -9,3 +9,11 @@ var movie = {
     time: "2h 58 min",
     category: " Adventure, Drama, Fantasy"
 }
+
+var info = "";
+for(var x in movie)
+{
+    info += movie[x] + "\n";
+}
+
+console.log(info);
