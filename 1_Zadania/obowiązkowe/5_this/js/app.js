@@ -16,7 +16,23 @@ car.printCarinfo();
 car.drive(20);
 car.printCarinfo();
 
-// 1
+// 1 
+car.serviceDates = ["11.11.2014", "11.11.2015", "11.11.2016"];
+ 
+car.newServiceDates = function(newDate){
+    this.serviceDates.push(newDate);
+}
+
+car.showServiceDates = function(){
+    for(var i=0; i<this.serviceDates.length; i++){
+        console.log(this.serviceDates[i]);
+    }
+}
+
+car.newServiceDates("11.11.2017");
+car.newServiceDates("11.11.2018");
+car.showServiceDates();
+car.printCarinfo();
 
 // 3
 var stairs = {
