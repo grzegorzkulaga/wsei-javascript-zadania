@@ -12,3 +12,21 @@ callOtherFunction(function (a, b) {
     console.log("Wynik", a + b)
 })
 
+callOtherFunction(function (a, b){
+    console.log("Szerokość prostokąta: ", a);
+    console.log("Wysokość prostokąta: ", b);
+    console.log("Pole powierzchni prostokąta: ", a*b);
+});
+
+callOtherFunction(function (a, b){
+    console.log("Szerokość kwadratu: ", a);
+    console.log("Wysokość kwadratu: ", b);
+
+    if(a==b){
+      console.log("Pole powierzchni kwadratu: ", a*b);
+    }
+    else{
+      console.log("To nie jest kwadrat.");
+    }
+});
+
