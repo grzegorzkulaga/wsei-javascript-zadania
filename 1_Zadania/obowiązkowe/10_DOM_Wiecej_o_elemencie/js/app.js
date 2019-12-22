@@ -50,4 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
     food.innerHTML = "Pizza";
 
     //task 3
+    var ulEx3 = document.querySelector(".ex3 ul");
+    ulEx3.classList.add("menu");
+
+    var liEx3 = document.querySelectorAll(".ex3 li");
+
+    for(var element of liEx3){
+        if(element.classList.contains("error")){
+            element.classList.remove("error");
+        }
+        if(!element.classList.contains("menuElement")){
+            element.classList.add("menuElement");
+        }
+    }
+    
 });
