@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    //task 4
+    //task  4
     var liEx4 = document.querySelectorAll(".ex4 li");
     for(var i=0; i<liEx4.length;i++){
         liEx4[i].dataset.id=i+1;
